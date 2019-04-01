@@ -1,11 +1,3 @@
-class Test {
+import { Test as Test1 } from "./Test";
 
-    constructor(stadt: string) {
-        console.log('Hallo', stadt, '😀');
-    }
-}
-
-
-
-
-let test = new Test('Bremen');
+let test = new Test1('Bremen');
