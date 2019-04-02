@@ -8,7 +8,10 @@
     <div class="card-title">
       <h2>
         {{ book.title }}
-        <span class="badge badge-secondary">{{ book.rating }}</span>
+        <ng-container
+          *ngFor="let r of rating">
+            ⭐️
+        </ng-container>
       </h2>
     </div>
 
