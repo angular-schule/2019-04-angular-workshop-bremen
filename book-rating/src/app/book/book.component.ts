@@ -6,16 +6,19 @@ import { Book } from '../shared/book';
   templateUrl: './book.component.html',
   styleUrls: ['./book.component.scss']
 })
-export class BookComponent implements OnInit {
+export class BookComponent {
 
   @Input() book: Book;
 
   @Output() rateUp = new EventEmitter<Book>();
   @Output() rateDown = new EventEmitter<Book>();
 
-  constructor() { }
+  doRateUp() {
+    this.rateUp.emit(this.book);
+  }
 
-  ngOnInit() {
+  doRateDown() {
+    this.rateDown.emit(this.book);
   }
 
   get rating() {

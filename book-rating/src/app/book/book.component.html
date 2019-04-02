@@ -20,10 +20,11 @@
     </p>
 
     <button
-      (click)="book.rating = book.rating - 1"
+      (click)="doRateDown()"
       class="btn btn-secondary mr-2">-</button>
 
     <button
+      (click)="doRateUp()"
       class="btn btn-primary">+</button>
 
   </div>
