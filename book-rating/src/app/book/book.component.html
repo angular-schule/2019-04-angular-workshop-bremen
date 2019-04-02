@@ -1,9 +1,23 @@
-<h2>
-  {{ book.title }}
-  -
-  {{ book.rating }}
-</h2>
+<div class="card mb-4">
+  <div class="card-body bg-light">
 
-<p>
-  {{ book.description }}
-</p>
+    <img src="//api.angular.schule/avatar/{{ book.rating }}"
+      class="img-thumbnail float-right ml-2"
+      width="200">
+
+    <div class="card-title">
+      <h2>
+        {{ book.title }}
+        <span class="badge badge-secondary">{{ book.rating }}</span>
+      </h2>
+    </div>
+
+    <p>
+      {{ book.description }}
+    </p>
+
+    <button
+      class="btn btn-primary">Klick mich</button>
+
+  </div>
+</div>
