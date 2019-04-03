@@ -12,6 +12,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
       ],
+      // *** shallow unit test ***
       schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
   }));

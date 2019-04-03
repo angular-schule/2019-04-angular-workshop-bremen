@@ -6,6 +6,7 @@ describe('BookComponent', () => {
   let component: BookComponent;
   let fixture: ComponentFixture<BookComponent>;
 
+  // *** unit test ***
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BookComponent ]
@@ -16,6 +17,7 @@ describe('BookComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(BookComponent);
     component = fixture.componentInstance;
+    // Stub
     component.book = {
       isbn: '000',
       title: '',
