@@ -9,13 +9,15 @@ import { CreateBookComponent } from './create-book/create-book.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BookDetailsComponent } from './book-details/book-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     BookComponent,
-    CreateBookComponent
+    CreateBookComponent,
+    BookDetailsComponent
   ],
   imports: [
     BrowserModule,

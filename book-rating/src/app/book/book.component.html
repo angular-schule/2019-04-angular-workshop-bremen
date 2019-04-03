@@ -25,7 +25,11 @@
 
     <button
       (click)="doRateUp()"
-      class="btn btn-primary">+</button>
+      class="btn btn-primary mr-2">+</button>
+
+    <a [routerLink]="['/book', book.isbn]"
+      class="btn btn-primary"
+    >Details</a>
 
   </div>
 </div>
