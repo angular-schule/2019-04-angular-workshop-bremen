@@ -32,11 +32,7 @@ export class CreateBookComponent {
       rating: 1
     };
 
-    // Hands-On:
-    // 1. Created event feuern, mit Buch
-    // 2. Event im Dashboard.html (abonieren)
-    // 3. Buch im Dashboard.ts zum Array hinzufügen
-
+    this.created.emit(newBook);
     this.bookForm.reset();
   }
 }
