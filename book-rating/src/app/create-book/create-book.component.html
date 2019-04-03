@@ -1,11 +1,13 @@
-<form [formGroup]="bookForm">
+<form [formGroup]="bookForm"
+  (ngSubmit)="submitForm()"
+>
 
   <div class="form-group">
     <label for="isbn">ISBN</label>
     <input formControlName="isbn" type="text" class="form-control" id="isbn">
   </div>
 
-  <div class="feedback-red" >
+  <div class="feedback-red" *ngIf="isInvalid('isbn')">
     Bitte geben Sie eine gültige ISBN an.
   </div>
 
@@ -20,6 +22,8 @@
   </div>
 
   <div class="form-group">
-    <button type="submit" class="btn btn-primary">Speichern</button>
+    <button
+      [disabled]="bookForm.invalid"
+      type="submit" class="btn btn-primary">Speichern</button>
   </div>
 </form>
